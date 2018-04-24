@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">StarterApp</string>
+
+    <string name="toast_retrofit_auth_success">success</string>
+    <string name="toast_retrofit_auth_fail">fail</string>
+
+    <string name="success">success</string>
+    <string name="fail">fail</string>
+
+</resources>

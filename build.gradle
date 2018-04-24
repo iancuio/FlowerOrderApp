@@ -1,0 +1,35 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+        google()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.2.0-alpha12'
+        classpath "io.realm:realm-gradle-plugin:5.0.1"
+    }
+}
+
+plugins {
+    //GIT INFO
+    id 'net.nemerosa.versioning' version '2.0.0'
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        mavenCentral()
+        google()
+
+        maven { url "https://maven.google.com" }
+        maven { url "https://clojars.org/repo/" }
+        maven { url "https://mvnrepository.com/artifact/com.google.dagger/dagger" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

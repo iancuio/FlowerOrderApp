@@ -1,0 +1,9 @@
+
+echo "Add commit message"
+read text
+
+git add -A
+
+git commit -m "$text"
+
+git push origin master

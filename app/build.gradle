@@ -1,0 +1,78 @@
+apply plugin: 'com.android.application'
+apply plugin: 'realm-android'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.iancuio.starterapp"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 1
+        multiDexEnabled true
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/LGPL2.1'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/services/javax.annotation.processing.Processor' // butterknife
+        exclude 'META-INF/rxjava.properties'
+    }
+}
+
+dependencies {
+    //ANDROID
+    //V4
+    implementation 'com.android.support:support-compat:27.1.1'
+    implementation 'com.android.support:support-core-utils:27.1.1'
+    implementation 'com.android.support:support-core-ui:27.1.1'
+    implementation 'com.android.support:support-fragment:27.1.1'
+
+    //DESIGN
+    implementation 'com.android.support:design:27.1.1'
+
+    //MULTI-DEX
+    implementation 'com.android.support:multidex:1.0.3'
+
+    //<UI>
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.intuit.sdp:sdp-android:1.0.4'
+    implementation 'com.intuit.ssp:ssp-android:1.0.5'
+    implementation 'me.grantland:autofittextview:0.2.1'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+
+    //REST
+    implementation group: 'com.squareup.retrofit2', name: 'retrofit', version: '2.4.0'
+    implementation group: 'com.squareup.retrofit2', name: 'converter-jackson', version: '2.4.0'
+    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-joda:2.9.2' //(IF USING JODA TIME)
+
+    //TIME
+    implementation 'joda-time:joda-time:2.9.9'
+
+    //<INJECTION>
+    //BUTTERKNIFE
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'
+
+    //FLOATING ACTION MENU
+    implementation 'com.github.clans:fab:1.6.4'
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+//apply plugin: 'com.google.gms.google-services'
