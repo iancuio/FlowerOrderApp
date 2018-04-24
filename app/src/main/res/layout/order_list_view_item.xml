@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/orderDetailsContainer_viewOrder_linearLayout"
+    android:layout_width="match_parent"
+    android:padding="@dimen/_10sdp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="@dimen/_5sdp"
+        android:background="@drawable/gray_border"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="@dimen/medium_divider"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:text="Order number:"
+                android:layout_marginRight="@dimen/small_divider"
+                android:textSize="@dimen/big_text"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/small_divider" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:id="@+id/number_orderListViewItem_textView"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/big_text"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="New!"
+                android:textStyle="bold"
+                android:textSize="@dimen/big_text"
+                android:id="@+id/new_orderListViewItem_textView"
+                android:textColor="@color/colorAccent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="@dimen/medium_divider"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/medium_text"
+                    android:text="Deliver to:"
+                    android:gravity="end"
+                    android:layout_marginBottom="@dimen/small_divider"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="@color/black"
+                    android:gravity="end"
+                    android:textSize="@dimen/medium_text"
+                    android:text="Price:"
+                    android:layout_marginBottom="@dimen/small_divider"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textColor="@color/black"
+                    android:gravity="end"
+                    android:textSize="@dimen/medium_text"
+                    android:text="Date:"
+                    android:layout_marginBottom="@dimen/small_divider"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="end"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/medium_text"
+                    android:text="Description:"
+                    android:layout_marginBottom="@dimen/small_divider"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginBottom="@dimen/small_divider"
+                    android:id="@+id/deliverTo_orderListViewItem_textView"
+                    android:textSize="@dimen/medium_text"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/price_orderListViewItem_textView"
+                    android:layout_marginBottom="@dimen/small_divider"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/medium_text"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="@dimen/small_divider"
+                    android:id="@+id/date_orderListViewItem_textView"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/medium_text"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginBottom="@dimen/small_divider"
+                    android:id="@+id/description_orderListViewItem_textView"
+                    android:textSize="@dimen/medium_text"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

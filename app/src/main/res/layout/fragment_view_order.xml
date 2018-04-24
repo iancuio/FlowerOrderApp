@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:padding="@dimen/_50sdp"
+    android:focusable="true"
+    android:background="#AA000000"
+    android:layout_height="match_parent"
+    tools:context=".ui.orders.viewOrder.ViewOrderFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/orderDetailsContainer_viewOrder_linearLayout"
+        android:visibility="invisible"
+        android:padding="@dimen/big_divider"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="@dimen/big_divider"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:text="Order number:"
+                android:layout_marginRight="@dimen/small_divider"
+                android:textSize="@dimen/big_text"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/small_divider" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:id="@+id/number_viewOrder_textView"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/big_text"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/medium_divider"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/medium_text"
+                android:text="Deliver to:"
+                android:layout_marginRight="@dimen/small_divider"
+                android:layout_marginBottom="@dimen/small_divider"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/deliverTo_viewOrder_textView"
+                android:textSize="@dimen/medium_text"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/medium_divider"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/medium_text"
+                android:text="Price: "
+                android:layout_marginRight="@dimen/small_divider"
+                android:layout_marginBottom="@dimen/small_divider"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/price_viewOrder_textView"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/medium_text"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/medium_divider"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/medium_text"
+                android:text="Date: "
+                android:layout_marginRight="@dimen/small_divider"
+                android:layout_marginBottom="@dimen/small_divider"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/date_viewOrder_textView"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/medium_text"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/medium_text"
+            android:text="Description:"
+            android:layout_marginRight="@dimen/small_divider"
+            android:layout_marginBottom="@dimen/small_divider"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/description_viewOrder_textView"
+            android:textSize="@dimen/medium_text"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="@dimen/_50sdp"
+        android:layout_centerInParent="true"
+        android:id="@+id/populateProgress_viewOrder_progressBar"
+        android:layout_height="@dimen/_50sdp" />
+
+</RelativeLayout>

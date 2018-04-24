@@ -4,12 +4,13 @@ apply plugin: 'realm-android'
 android {
     compileSdkVersion 27
     defaultConfig {
-        applicationId "com.iancuio.starterapp"
+        applicationId "com.iancuio.flowerorder"
         minSdkVersion 16
         targetSdkVersion 27
         versionCode 1
         multiDexEnabled true
         versionName "1.0"
+        vectorDrawables.useSupportLibrary = true
     }
 
     buildTypes {
@@ -59,7 +60,9 @@ dependencies {
     //REST
     implementation group: 'com.squareup.retrofit2', name: 'retrofit', version: '2.4.0'
     implementation group: 'com.squareup.retrofit2', name: 'converter-jackson', version: '2.4.0'
-    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-joda:2.9.2' //(IF USING JODA TIME)
+    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-joda:2.9.2'
+    compile group: 'com.squareup.retrofit2', name: 'adapter-rxjava2', version: '2.3.0'
+    //(IF USING JODA TIME)
 
     //TIME
     implementation 'joda-time:joda-time:2.9.9'
@@ -67,6 +70,8 @@ dependencies {
     //<INJECTION>
     //BUTTERKNIFE
     implementation 'com.jakewharton:butterknife:8.8.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    implementation 'com.android.support:support-v4:27.1.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'
 
     //FLOATING ACTION MENU
@@ -76,3 +81,4 @@ dependencies {
 }
 
 //apply plugin: 'com.google.gms.google-services'
+

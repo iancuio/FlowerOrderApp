@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="small_text">@dimen/_11ssp</dimen>
+    <dimen name="medium_text">@dimen/_13ssp</dimen>
+    <dimen name="big_text">@dimen/_15ssp</dimen>
+
+    <dimen name="small_divider">@dimen/_3sdp</dimen>
+    <dimen name="medium_divider">@dimen/_5sdp</dimen>
+    <dimen name="big_divider">@dimen/_8sdp</dimen>
+</resources>

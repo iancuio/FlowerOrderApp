@@ -1,10 +1,17 @@
 <resources>
-    <string name="app_name">StarterApp</string>
+    <string name="app_name">FlowerOrders</string>
 
     <string name="toast_retrofit_auth_success">success</string>
     <string name="toast_retrofit_auth_fail">fail</string>
 
     <string name="success">success</string>
     <string name="fail">fail</string>
+
+    <string name="empty_order_list">There are no orders at this time.</string>
+
+    <string name="no_new_orders">No new orders at this time!</string>
+    <string name="new_orders">You have new orders!</string>
+    <string name="no_internet">You have no internet!</string>
+    <string name="something_went_wrong_new_orders">Something went wrong while retrieving new orders!</string>
 
 </resources>

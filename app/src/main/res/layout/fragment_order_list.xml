@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:id="@+id/filterContainer_orderList_linearLayout"
+        android:layout_height="@dimen/_40sdp">
+
+        <ImageView
+            android:layout_width="@dimen/_25sdp"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/magnify"
+            android:tint="@color/white"
+            android:layout_marginRight="@dimen/small_divider"
+            android:layout_height="@dimen/_25sdp" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:id="@+id/filter_orderList_ediText"
+            android:textSize="@dimen/medium_text"
+            android:backgroundTint="@color/white"
+            android:layout_height="@dimen/_30sdp" />
+
+        <ImageView
+            android:layout_width="@dimen/_25sdp"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/close"
+            android:tint="@color/white"
+            android:id="@+id/clearFilter_orderList_imageView"
+            android:layout_marginRight="@dimen/small_divider"
+            android:layout_height="@dimen/_25sdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="New"
+            android:textSize="@dimen/medium_text"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_height="@dimen/_30sdp" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:layout_width="@dimen/_30sdp"
+            android:id="@+id/filterNew_orderList_checkBox"
+            android:buttonTint="@color/white"
+            android:layout_height="@dimen/_30sdp" />
+
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/filterContainer_orderList_linearLayout"
+        android:id="@+id/swipeRefresh_orderList_swipeRefreshLayout"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:dividerHeight="0dp"
+            android:divider="@null"
+            android:id="@+id/orderList_orderList_listView"
+            android:layout_height="match_parent"/>
+
+        <ProgressBar
+            android:layout_width="@dimen/_50sdp"
+            android:id="@+id/emptyListProgress_orderList_progressBar"
+            android:layout_centerInParent="true"
+            android:layout_height="@dimen/_50sdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/_14ssp"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:id="@+id/emptyListText_orderList_textView"
+            android:text="@string/empty_order_list"
+            android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

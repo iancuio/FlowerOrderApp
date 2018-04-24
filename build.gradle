@@ -15,7 +15,6 @@ buildscript {
 
 plugins {
     //GIT INFO
-    id 'net.nemerosa.versioning' version '2.0.0'
 }
 
 allprojects {
@@ -24,9 +23,7 @@ allprojects {
         mavenCentral()
         google()
 
-        maven { url "https://maven.google.com" }
         maven { url "https://clojars.org/repo/" }
-        maven { url "https://mvnrepository.com/artifact/com.google.dagger/dagger" }
     }
 }
 
